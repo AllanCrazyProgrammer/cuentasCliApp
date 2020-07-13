@@ -58,23 +58,23 @@ module.exports = {
         data[i] -= 5;
         din5 += 1;
       }
+      /*
+            if (data[i] === 4 && data[i] > 0) {
+              data[i] -= 4;
+              din2 += 2;
+            }
+      
+            if (data[i] === 2 && data[i] > 0) {
+              data[i] -= 2;
+              din2 += 1;
+            }
+      
+            if (data[i] === 4 && data[i] > 0) {
+              data[i] -= 4;
+              din2 += 2;
+            }*/
 
-      if (data[i] === 4 && data[i] > 0) {
-        data[i] -= 4;
-        din2 += 2;
-      }
-
-      if (data[i] === 2 && data[i] > 0) {
-        data[i] -= 2;
-        din2 += 1;
-      }
-
-      if (data[i] === 4 && data[i] > 0) {
-        data[i] -= 4;
-        din2 += 2;
-      }
-
-      if (data[i] < 5 && data[i] > 0) {
+      if (data[i] <= 5 && data[i] >= 0) {
         din1 += data[i];
       }
 
